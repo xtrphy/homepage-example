@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* 1. Use a more-intuitive box-sizing model */
 *,
@@ -71,8 +70,209 @@ h6 {
   isolation: isolate;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* ============================== */
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0891b3;
+  flex-wrap: wrap;
+  padding: 5% 5% 10% 5%;
+  clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 3vw), 0% 100%);
+}
+
+.header-picture {
+  width: 30rem;
+  height: 35rem;
+  object-fit: cover;
+}
+
+.image-container {
+  position: relative;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.my-name {
+  position: absolute;
+  bottom: 10px;
+  left: 70px;
+  color: #fff;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  gap: 16px;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.about-me-title {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.about-me-subtitle {
+  font-size: 1.25rem;
+  color: #646464;
+  font-family: 'Roboto', sans-serif;
+}
+
+.social-media-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 32px;
+}
+
+.link {
+  font-size: 1.75rem;
+  color: #000;
+}
+
+/* My Projects Section */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.my-projects {
+  margin-bottom: 2rem;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 90%;
+  max-width: 1200px;
+  justify-content: center;
+  grid-template-rows: 1fr 1fr;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.project-name-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.project-description {
+  padding: 20px;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-screenshot-container {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+.project-screenshot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dashboard,
+.todo-app {
+  object-position: left;
+}
+
+/* My Projects Section End */
+
+/* Footer */
+
+.footer {
+  background-color: #0891b3;
+  padding: 5rem;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20rem;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  color: #fff;
+}
+
+.contact-me {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.fa-phone,
+.fa-envelope {
+  margin-right: 16px;
+  font-size: 22px;
+}
+
+.contact-description,
+.address,
+.phone-number,
+.email {
+  font-size: 1.75rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.footer-social-media-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-picture {
+  width: 500px;
+  height: 600px;
+  object-fit: cover;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
 }
